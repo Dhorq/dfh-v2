@@ -5,6 +5,7 @@ import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import Navbar from "./sections/Navbar";
 import "./index.css";
+import Testimony from "./sections/Testimony";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <About />
       <Facility />
+      <Testimony />
       <Contact />
       <Footer />
     </div>
