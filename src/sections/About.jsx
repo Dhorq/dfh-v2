@@ -62,7 +62,10 @@ const About = () => {
           className="w-full col-span-2 lg:col-span-4 h-[390px] border border-black/50 rounded-2xl"
           controls
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source
+            src="https://drive.google.com/file/d/1GBky8V3Zi2RLKBapG6RlUalS3W5QAp_D/view?usp=sharing"
+            type="video/mp4"
+          />
         </video>
       </div>
     </div>
