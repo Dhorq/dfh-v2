@@ -1,20 +1,21 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation } from "swiper/modules";
+import facility from "./../data/facility";
 import "swiper/css";
 import "swiper/css/navigation";
-import facility from "./../data/facility";
 
 const Facility = () => {
   return (
-    <div className="px-25 my-10">
+    <div className="px-5 py-5 lg:px-25 lg:py-5">
       <h2 className="text-5xl font-semibold mb-5">Our Facilities</h2>
 
       <Swiper
-        spaceBetween={60}
+        className="mySwiper w-full"
+        spaceBetween={100}
         slidesPerView={3}
         modules={[Navigation, Autoplay, EffectFade]}
         autoplay={{ delay: 2000 }}
-        effect="fade"
+        effect="coverflow"
         navigation
         breakpoints={{
           0: {
@@ -36,9 +37,13 @@ const Facility = () => {
         }}
       >
         {facility.map((i) => (
-          <SwiperSlide key={i.name}>
-            <div className="max-w-100">
-              <img src={i.image} alt={i.name} />
+          <SwiperSlide key={i.id}>
+            <div>
+              <img
+                src={i.image}
+                alt={i.name}
+                className="border-none rounded-2xl"
+              />
               <p className="font-semibold text-2xl mt-2">{i.name}</p>
             </div>
           </SwiperSlide>
