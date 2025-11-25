@@ -1,5 +1,3 @@
-import video from "./../assets/video/video.mp4";
-
 const About = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 px-5 py-5 lg:px-25 lg:py-5">
@@ -64,7 +62,7 @@ const About = () => {
           className="w-full col-span-2 lg:col-span-4 h-[390px] border border-black/50 rounded-2xl"
           controls
         >
-          <source src={video} type="video/mp4" />
+          <source src="/video.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
