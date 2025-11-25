@@ -1,0 +1,26 @@
+import front from "./../assets/img/frontporch.jpg";
+
+const Contact = () => {
+  return (
+    <div className="px-5 py-5 lg:px-25 lg:py-5 flex flex-col justify-center items-center">
+      <img
+        src={front}
+        alt=""
+        className="min-w-full max-h-100 object-cover rounded-[10px] saturate-50"
+      />
+      <div className="absolute flex flex-col justify-center items-center text-center gap-2 text-white">
+        <h2 className="text-2xl font-bold">Let's Visit Us</h2>
+        <p>Try</p>
+        <a
+          href="https://api.whatsapp.com/"
+          target="_blank"
+          className="bg-white text-black p-3 rounded-full font-medium cursor-pointer hover:scale-110"
+        >
+          Contact Us Now!
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
